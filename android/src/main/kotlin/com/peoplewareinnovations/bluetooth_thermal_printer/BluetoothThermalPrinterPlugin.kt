@@ -157,7 +157,7 @@ class BluetoothThermalPrinterPlugin: FlutterPlugin, MethodCallHandler{
             write(setBytes.cancelar_chino)
             write(setBytes.caracteres_escape)
             write(setBytes.size[size])
-            write(texto.toByteArray(charset("UTF-8")))
+            write(texto.toByteArray(charset("ISO-8859-1")))
             result.success("true")
           }
         }catch (e: Exception){
